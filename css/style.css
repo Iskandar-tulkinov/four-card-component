@@ -1,0 +1,104 @@
+/*
+font-family: 'Poppins', sans-serif;
+ */
+
+ html{
+   height: 100%;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+  }
+  *,*::after,*::before{
+    box-sizing: inherit;
+  }
+  body{
+max-width: 1440px;
+width: 100%;
+padding-top: 0;
+margin-top: 0;
+ }
+ .four-card-feat-section {
+  width: 100%;
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family:"Poppins","Arial", sans-serif ;
+}
+.four-card-header {
+  margin: 30px;
+  text-align: center;
+  word-spacing: 2px;
+}
+.four-card-motto {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #494752;
+  font-size: 20px;
+  font-weight: 500;
+}
+.four-card-name {
+  color: #000000d3;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 0;
+}
+.four-card-desciption {
+  font-size: 14px;
+  font-weight: normal;
+  color: #494752;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+.four-card-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 30px;
+  padding: 20px;
+}
+.card-box {
+  margin:20px;
+  box-shadow:2px   6px 5px rgba(128, 128, 128, 0.328);
+  border-top: 4px solid ;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.card-box:hover{
+  transform: scale(1.05);
+}
+.card-box img{
+position: absolute;
+right: 20px;
+bottom: 20px;
+}
+.card-box.card-box-first{
+  border-top-color:#A1E1E1 ;
+}
+.card-box.card-box-second{
+  border-top-color:red;
+}
+.card-box.card-box-third{
+  border-top-color:#F8AC4B ;
+}
+.card-box.card-box-fourth{
+  border-top-color:#519CF0 ;
+}
+.card-box .card-description-text{
+  margin-bottom: 80px;
+}
+
+@media only screen and (max-width:800px) {
+  .four-card-feat-section{
+    flex-direction: column;
+  }
+  .four-card-item-wrapper{
+    flex-direction: column;
+  }
+.card-box{
+  margin: 10px;
+padding: 10px;
+}
+}
